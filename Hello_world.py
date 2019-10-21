@@ -1,3 +1,10 @@
-print("hello world")
-add = 5+2
-print (add)
+from flask import Flask
+
+app = Flask(__name__)
+app.route("/")
+
+
+def hello_world():
+    print("hello world")
+
+app.run()
